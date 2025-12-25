@@ -1,0 +1,436 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ده style بتاع ملف Home.html */
+
+
+body {
+    background: linear-gradient(135deg, #000000 0%, #0f0c29 50%, #000000 100%);
+    background-attachment: fixed; /* يخلي الخلفية ثابتة والكلام يتحرك فوقها */
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.future {
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.navbar {
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 20px;
+    transition: 0.6s;
+    margin: 20px auto; 
+    width: 90%; 
+}
+
+
+.navbar:hover {
+    box-shadow: 0 0 35px rgb(255, 255, 255);
+    transform: scale(1.1); 
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 100%; 
+    margin-top: 70px;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.link:hover {
+    color: rgb(153, 0, 255);
+}
+
+.info{
+    display: flex;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    background-color: blue;
+    font-size: 25px;
+    font-family:Arial;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 40px;
+    justify-content: center;
+    border-radius: 20px;
+    transition: 0.7s;
+}
+
+.info:hover{
+    color: black;
+    background-color: aqua;
+    box-shadow: 0 0 35px white;
+    transform: scale(1.1);
+}
+
+
+
+/* ده style بتاع ملف About Me.html */
+
+
+
+body {
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center; 
+    margin-bottom: 20px;
+    transition: 0.6s;
+}
+
+h2:hover{
+   transform: scale(1.1); 
+}
+
+.div3 {
+    width: 90%;
+    max-width: 600px; 
+    min-height: 90px; 
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    margin: 0 auto; 
+    padding: 20px;  
+    transition: 0.6s;
+}
+
+.div3:hover {
+    box-shadow: 0 0 35px white;
+    transform: scale(1.1); 
+}
+
+.aboutme-exit {
+    display: block; 
+    width: fit-content; 
+    background-color: blue;
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin: 40px auto; 
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    transition: 0.6s;
+}
+
+.aboutme-exit:hover {
+    background-color: aqua;
+    color: black;
+    transform: scale(1.1); 
+    box-shadow: 0 0 35px white;
+}
+
+.Abdo{
+   display: block;
+   margin-top: 20px;
+   margin-left: auto;
+   margin-right: auto;
+   width: 200px;
+   border-radius: 20px;
+   transition: 0.6s;
+}
+.Abdo:hover{
+   box-shadow: 0 0 35px white;
+   transform: scale(1.1); 
+}
+
+
+/* ده style بتاع ملف Skills.html */
+
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    justify-content: center;
+    padding: 50px;
+}
+
+.skill-card {
+    background: linear-gradient(45deg, #9900ff, #00ffff);
+    padding: 20px 40px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px); /* حركة خفيفة للأعلى */
+    box-shadow: 0 10px 20px rgba(255,255,255,0.2);
+}
+
+.skills-exit{
+    display: block; 
+    width: fit-content; 
+    background-color: blue;
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin: 40px auto; 
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    transition: 0.6s;
+}
+
+.skills-exit:hover{
+    background-color: aqua;
+    color: black;
+    transform: scale(1.1); 
+    box-shadow: 0 0 35px white;
+}
+
+
+/* ده style بتاع ملف Hobbies.html */
+
+
+.hobbies-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hobbies{
+    background-color: rgb(255, 0, 140);
+    width: 100vh;
+    margin: auto 35%;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 40px;
+    text-align: center;
+    transition: 0.6s;
+}
+
+.hobbies:hover{
+    background-color: rgb(0, 255, 98);
+    transform: scale(1.1);
+    box-shadow: 0 0 35px white;
+    color: black;
+    filter: blur(3px);
+}
+
+.hobbies-container:hover > .hobbies{
+    filter: blur(3px);
+    transition: 0.5s;
+}
+
+.hobbies-container > .hobbies:hover{
+    filter: blur(0);
+}
+
+
+/* ده الستايل بتاع ملف Contact.html */
+
+
+.body-contact{
+    color: white;
+}
+
+.contact-whatsapp{
+    display: flex;
+    background-color: rgb(0, 194, 0);
+    padding: 10px;
+    margin: 0 10%;
+    border-radius: 20px;
+    transition: 0.6s;
+    margin-top: 20px;
+    justify-content: center;
+    transform: scale(1.1);
+}
+
+.contact-twitter{
+    display: flex;
+    background-color: rgb(0, 133, 194);
+    padding: 10px;
+    margin: 0 10%;
+    border-radius: 20px;
+    margin-top: 20px;
+    transition: 0.6s;
+    justify-content: center;
+    transform: scale(1.1);
+}
+
+.contact-instgram{
+    display: flex;
+    background-color: rgb(247, 0, 255);
+    padding: 10px;
+    margin: 0 10%;
+    border-radius: 20px;
+    margin-top: 20px;
+    transition: 0.6s;
+    justify-content: center;
+    transform: scale(1.1);
+}
+
+.contact-tiktok{
+    display: flex;
+    background-color: rgb(47, 38, 48);
+    padding: 10px;
+    margin: 0 10%;
+    border-radius: 20px;
+    margin-top: 20px;
+    transition: 0.6s;
+    justify-content: center;
+    transform: scale(1.1);
+}
+
+.contact-facebook{
+    display: flex;
+    background-color: blue;
+    padding: 10px;
+    margin: 0 10%;
+    border-radius: 20px;
+    margin-top: 20px;
+    transition: 0.6s;
+    justify-content: center;
+    transform: scale(1.1);
+}
+
+.contact-whatsapp:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    transform: scale(1.2); 
+}
+
+.contact-twitter:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    transform: scale(1.2); 
+}
+
+.contact-instgram:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    transform: scale(1.2); 
+}
+
+.contact-tiktok:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    transform: scale(1.2); 
+}
+
+.contact-facebook:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    transform: scale(1.2); 
+}
+
+.h1{
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+
+/* ده style بتاع ملف help.html */
+
+.help{
+    transition: 0.6s;
+}
+
+.help:hover{
+    transform: scale(1.1);
+}
+
+hr{
+    margin-top: 20px;
+}
+
+.boxr{
+    margin: auto;
+    width: 80%;
+    margin-top: 50px;
+    padding: 30px 20px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 20px;
+    transition: 0.6s;
+    
+}
+
+.boxr:hover{
+    box-shadow: 0 0 35px rgb(255, 255, 255);
+    transform: scale(1.1);
+}
+
+@media only screen and (min-width: 620px) {
+    .boxr{
+        width: 50%;
+    }
+}
+
+/* ده ال style  بتاع ملف information.html*/
+
+
+.navbar-2{
+    width: 90%;
+    max-width: 600px; 
+    min-height: 90px; 
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    margin: 0 auto; 
+    padding: 20px;  
+    transition: 0.6s;
+    margin-top: 20px;
+}
+
+.navbar-2:hover {
+    box-shadow: 0 0 35px rgb(255, 255, 255);
+    transform: scale(1.1); 
+}
+
+.p-info{
+    margin-bottom: 20px;
+    transition: 0.6s;
+}
+
+.p-info:hover{
+    letter-spacing: 1px;
+}
+
+.photo-1{
+   display: block;
+   margin-top: 20px;
+   margin-left: auto;
+   margin-right: auto;
+   width: 200px;
+   border-radius: 20px;
+   transition: 0.6s;
+}
+
+.photo-1:hover{
+   box-shadow: 0 0 35px white;
+   transform: scale(1.1); 
+   margin-top: 40px;
+}
+
+.h1-info{
+    text-decoration: underline;
+    transition: 0.6s;
+}
+
+.h1-info:hover{
+    transform: scale(1.1);
+}
